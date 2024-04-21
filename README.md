@@ -66,7 +66,7 @@ Metoda readFromFile(String filePath): Kjo metodë lexon përmbajtjen e një file
 
 * Udhëzime për përdoruesin:
   
-Zgjidhni një Opsion: Ju do të nxitni të zgjidhni mes dy opsioneve:
+Zgjidhni një opsion: Ju do të nxitni të zgjidhni mes dy opsioneve:
 
 Dhënia manuale e çelësit: Nëse zgjidhni këtë opsion, do të jepni drejtpërdrejt tekstin që do të përdoret per enkriptim të mesazhit tuaj.
 

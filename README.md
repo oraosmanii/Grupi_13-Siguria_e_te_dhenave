@@ -78,11 +78,11 @@ Nëse zgjodhët të jepni çelësin manualisht, do t'ju kërkohet të jepni teks
 
 Nëse zgjodhët të siguroni një file si çelës, do t'ju kërkohet të jepni filepath-in e filet që paraqet çelësin.
 
-Jepni tekstin për të enkriptuar:Pas dhënies së çelësit, do t'ju kërkohet të jepni tekstin që dëshironi ta enkriptoni.
+Jepni tekstin për të enkriptuar: Pas dhënies së çelësit, do t'ju kërkohet të jepni tekstin që dëshironi ta enkriptoni.
 
 Enkriptimi: Pastaj programi do të enkriptojë tekstin e dhënë duke përdorur çelësin e siguruar.
 
-Jepni tekstin për të dekriptuar:Pas enkriptimit, do t'ju kërkohet të jepni tekstin që dëshironi të dekriptoni.
+Jepni tekstin për të dekriptuar: Pas enkriptimit, do t'ju kërkohet të jepni tekstin që dëshironi të dekriptoni.
 
 Dekriptimi: Programi do të dekriptojë tekstin e dhënë duke përdorur të njëjtin çelës të përdorur për enkriptim.
 

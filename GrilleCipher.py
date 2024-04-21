@@ -37,7 +37,7 @@ def input_plaintext():
         line = input().strip()
         if not line:
             break
-        plaintext.append(line.upper())  # Convert each line to uppercase before appending
+        plaintext.append(line.upper()) 
     return ''.join(plaintext)
 
 
@@ -58,7 +58,7 @@ def encrypt(plaintext, grille):
         for i in range(size):
             for j in range(size):
                 if grille[i][j] == 1:
-                    # If there are plaintext characters left, add them to ciphertext
+                    
                     if plaintext_index < len(plaintext):
                         ciphertext.append(plaintext[plaintext_index])
                         plaintext_index += 1
@@ -66,10 +66,10 @@ def encrypt(plaintext, grille):
                         ciphertext.append(' ')
 
                 else:
-                    # If grille pattern is 0, add a random letter
+                    
                     ciphertext.append(random.choice(string.ascii_uppercase))
 
-    # Convert ciphertext list to string
+    
     return ''.join(ciphertext)
 
 
@@ -81,7 +81,7 @@ def decrypt(ciphertext, grille):
     ciphertext_index = 0
 
     while ciphertext_index < len(ciphertext_chars):
-     # Fill in the positions determined by the grille pattern
+     
         for i in range(size):
             for j in range(size):
                 if grille[i][j] == 1:
@@ -90,7 +90,6 @@ def decrypt(ciphertext, grille):
                 ciphertext_index += 1
 
 
-    # Assemble the plaintext characters into a string
     return ''.join(plaintext)
 
 

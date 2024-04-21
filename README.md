@@ -83,4 +83,7 @@ Beale Cipher është një metodë për të koduar mesazhe. Kjo metodë përdor n
    * Dekriptimi: Programi do të dekriptojë tekstin e dhënë duke përdorur të njëjtin çelës të përdorur për enkriptim.
 
 
+* Një shembull i ekzekutimit
+![Beale ekzekutimi](BealeCipherImage.PNG)
+
 

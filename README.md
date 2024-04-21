@@ -80,10 +80,8 @@ Nëse zgjodhët të siguroni një file si çelës, do t'ju kërkohet të jepni f
 Jepni tekstin për të enkriptuar:
 
 Pas dhënies së çelësit, do t'ju kërkohet të jepni tekstin që dëshironi ta enkriptoni.
-Enkriptimi: Pastaj programi do të enkriptojë tekstin e dhënë duke përdorur çelësin e siguruar.
-Jepni tekstin për të dekriptuar:
 
-Pas enkriptimit, do t'ju kërkohet të jepni tekstin që dëshironi të dekriptoni.
+Enkriptimi: Pastaj programi do të enkriptojë tekstin e dhënë duke përdorur çelësin e siguruar.Pas enkriptimit, do t'ju kërkohet të jepni tekstin që dëshironi të dekriptoni.
 
 Dekriptimi: Programi do të dekriptojë tekstin e dhënë duke përdorur të njëjtin çelës të përdorur për enkriptim.
 

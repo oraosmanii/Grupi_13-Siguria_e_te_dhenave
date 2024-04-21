@@ -23,7 +23,7 @@ Kështu pra fitojmë ciphertext: nëse kemi vrimë/vlerën 1 shto shkronjën e p
 * * Kërkohet grille size - duhet të jepni vetëm një numër pozitiv (psh 4), kjo do të caktojë madhësinë e matricës së përdorur (psh 4x4).
 * * Kërkohet grille pattern - këtu do të jepni vetëm vlerat 0(nuk është vrimë) ose 1(është vrimë). Do të ju kërkohet të jepni vlerat veç e veç për secilin rresht. Gjihashtu edhe vlerat e marra për rresht duhet një vlerë, pastaj enter, pastaj të vazhdoni me të tjerat. Mund të shihni një shembull vizuel më poshtë.
 
-* Shembull ekzekutimi
+* Një shembull i ekzekutimit
 ![Grille ekzekutimi](img.png)
 
 

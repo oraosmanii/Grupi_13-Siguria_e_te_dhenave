@@ -1,7 +1,7 @@
 import math
 import random
 import string
-def inputgrille_size():
+def input_grille_size():
     while True:
         try:
             size = int(input("Enter the grille size: "))
@@ -37,7 +37,7 @@ def input_plaintext():
         line = input().strip()
         if not line:
             break
-        plaintext.append(line.upper()) 
+        plaintext.append(line.upper())  # Convert each line to uppercase before appending
     return ''.join(plaintext)
 
 
@@ -47,3 +47,55 @@ grille = input_grille(size)
 print("Grille pattern:")
 for row in grille:
     print(row)
+
+def encrypt(plaintext, grille):
+    ciphertext = []
+    size = len(grille)
+    plaintext_chars = [char for char in plaintext]
+    plaintext_index = 0
+
+    while plaintext_index < len(plaintext):
+        for i in range(size):
+            for j in range(size):
+                if grille[i][j] == 1:
+                    # If there are plaintext characters left, add them to ciphertext
+                    if plaintext_index < len(plaintext):
+                        ciphertext.append(plaintext[plaintext_index])
+                        plaintext_index += 1
+                    else:
+                        ciphertext.append(' ')
+
+                else:
+                    # If grille pattern is 0, add a random letter
+                    ciphertext.append(random.choice(string.ascii_uppercase))
+
+    # Convert ciphertext list to string
+    return ''.join(ciphertext)
+
+
+
+def decrypt(ciphertext, grille):
+    size = len(grille)
+    plaintext = []
+    ciphertext_chars = [char for char in ciphertext]
+    ciphertext_index = 0
+
+    while ciphertext_index < len(ciphertext_chars):
+     # Fill in the positions determined by the grille pattern
+        for i in range(size):
+            for j in range(size):
+                if grille[i][j] == 1:
+                     plaintext.append(ciphertext_chars[ciphertext_index])
+
+                ciphertext_index += 1
+
+
+    # Assemble the plaintext characters into a string
+    return ''.join(plaintext)
+
+
+encrypted_text = encrypt(plaintext, grille)
+print("\nEncrypted:", encrypted_text)
+
+decrypted_text = decrypt(encrypted_text, grille)
+print("Decrypted:", decrypted_text)

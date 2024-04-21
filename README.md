@@ -29,7 +29,8 @@ Kështu pra fitojmë ciphertext: nëse kemi vrimë/vlerën 1 shto shkronjën e p
 
 
 ## Beale Cipher
-Përshkrim i shkurtër se çka është Beale cipher
+
+* Përshkrim i shkurtër se çka është Beale cipher
 
 Beale Cipher është një metodë për të koduar mesazhe. Kjo metodë përdor një apo një grup libërash për të fshehur ose për të zbuluar mesazhin e fshehur.
 

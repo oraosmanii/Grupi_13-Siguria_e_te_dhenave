@@ -36,55 +36,51 @@ Beale Cipher është një metodë për të koduar mesazhe. Kjo metodë përdor n
 
 * Enkriptimi:
 
-Zgjidhni një libër ose një grup libërash si çelës.
+  * Zgjidhni një libër ose një grup libërash si çelës.
 
-Caktoni një numër unik për çdo fjalë në libër që zakonisht bazohet në pozicionin e tyre në libër.
+  * Caktoni një numër unik për çdo fjalë në libër që zakonisht bazohet në pozicionin e tyre në libër.
 
-Për të koduar një mesazh, zëvendësoni çdo fjalë në mesazh me numrin e saj korrespondente në libër.
+  * Për të koduar një mesazh, zëvendësoni çdo fjalë në mesazh me numrin e saj korrespondente në libër.
 
 * Dekriptimi:
   
-Keni qasje në të njëjtin libër ose grup libërash që janë përdorur për enkriptim.
+  * Keni qasje në të njëjtin libër ose grup libërash që janë përdorur për enkriptim.
 
-Kërkoni çdo numër në mesazhin e koduar në librat për të gjetur fjalën korrespondente.
+  * Kërkoni çdo numër në mesazhin e koduar në librat për të gjetur fjalën korrespondente.
 
-Rikrijoni mesazhin origjinal duke zëvendësuar çdo numër me fjalën e tij korrespondente.
+  * Rikrijoni mesazhin origjinal duke zëvendësuar çdo numër me fjalën e tij korrespondente.
 
 * Përshkrim i kodit të përdorur për algoritmin:
   
-Për të koduar këtë cipher kemi përdorur gjuhën programuese Java.
+  Për të koduar këtë cipher kemi përdorur gjuhën programuese Java.
 
-Metoda main(String[] args): Kjo është metoda kryesore e programit. Ajo mundeson qe  përdoruesi të mund të zgjedhë midis hyrjes së çelësit manualisht ose ofrimit të një file si çelës. Pastaj kërkon tekstin që do të enkriptohet, e enkripton atë dhe në fund kërkon tekstin që do të dekriptohet, e dekripton atë dhe printon rezultatet.
+  * Metoda main(String[] args): Kjo është metoda kryesore e programit. Ajo mundeson qe  përdoruesi të mund të zgjedhë midis hyrjes së çelësit manualisht ose ofrimit të një file si çelës. Pastaj kërkon tekstin që do të enkriptohet, e enkripton atë dhe në fund kërkon tekstin që do të dekriptohet, e dekripton atë dhe printon rezultatet.
 
-Metoda encrypt(String plainText, String keyText): Kjo metodë merr plaintextin dhe tekstin e çelësit si hyrje dhe kthen tekstin e enkriptuar. Ajo gjeneron një key map nga teksti i çelësit, ku çdo fjalë në tekstin e çelësit i caktohet një numër unik. Pastaj ajo iteron përmes plaintextit, duke zëvendësuar çdo fjalë me numrin e saj korrespondente nga key mapi.
+  * Metoda encrypt(String plainText, String keyText): Kjo metodë merr plaintextin dhe tekstin e çelësit si hyrje dhe kthen tekstin e enkriptuar. Ajo gjeneron një key map nga teksti i çelësit, ku çdo fjalë në tekstin e çelësit i caktohet një numër unik. Pastaj ajo iteron përmes plaintextit, duke zëvendësuar çdo fjalë me numrin e saj korrespondente nga key mapi.
 
-Metoda decrypt(String cipherText, String keyText): Kjo metodë merr tekstin e enkriptuar dhe tekstin e çelësit si hyrje dhe kthen tekstin e dekriptuar. Ngjashëm me enkriptimin, ajo gjeneron një key map nga teksti i çelësit. Pastaj e ndan tekstin e koduar në numra të veçantë, kërkon çdo numër në key map për të gjetur fjalën korrespondente dhe rikrijon tekstin origjinal.
+  * Metoda decrypt(String cipherText, String keyText): Kjo metodë merr tekstin e enkriptuar dhe tekstin e çelësit si hyrje dhe kthen tekstin e dekriptuar. Ngjashëm me enkriptimin, ajo gjeneron një key map nga teksti i çelësit. Pastaj e ndan tekstin e koduar në numra të veçantë, kërkon çdo numër në key map për të gjetur fjalën korrespondente dhe rikrijon tekstin origjinal.
 
-Metoda generateKeyMap(String keyText): Kjo metodë gjeneron një key map nga teksti i çelësit. Ajo ndan tekstin e çelësit në fjalë të veçanta, i cakton çdo fjale një numër unik dhe ruan hapat në një strukturë të të dhënave hartë.
+  * Metoda generateKeyMap(String keyText): Kjo metodë gjeneron një key map nga teksti i çelësit. Ajo ndan tekstin e çelësit në fjalë të veçanta, i cakton çdo fjale një numër unik dhe ruan hapat në një strukturë të të dhënave hartë.
 
-Metoda readFromFile(String filePath): Kjo metodë lexon përmbajtjen e një file të specifikuar nga file pathi dhe e kthen atë në string. Përdoret kur përdoruesi zgjedh të japë një file si çelës.
+  * Metoda readFromFile(String filePath): Kjo metodë lexon përmbajtjen e një file të specifikuar nga file pathi dhe e kthen atë në string. Përdoret kur përdoruesi zgjedh të japë një file si çelës.
 
 * Udhëzime për përdoruesin:
   
-Zgjidhni një opsion: Ju do të nxitni të zgjidhni mes dy opsioneve:
+   * Zgjidhni një opsion: Ju do të nxitni të zgjidhni mes dy opsioneve:
 
-Dhënia manuale e çelësit: Nëse zgjidhni këtë opsion, do të jepni drejtpërdrejt tekstin që do të përdoret per enkriptim të mesazhit tuaj.
+   * Dhënia manuale e çelësit: Nëse zgjidhni këtë opsion, do të jepni drejtpërdrejt tekstin që do të përdoret per enkriptim të mesazhit tuaj.
 
-Sigurimi i një file si çelës: Nëse zgjidhni këtë opsion, do të siguroni filepath-in për një file që do të përdoret si çelës.
+   * Sigurimi i një file si çelës: Nëse zgjidhni këtë opsion, do të siguroni filepath-in për një file që do të përdoret si çelës.
 
-Dhënia e çelësit: 
+   * Dhënia e çelësit: Nëse zgjodhët të jepni çelësin manualisht, do t'ju kërkohet të jepni tekstin qe do të paraqet çelësin.Nëse zgjodhët të siguroni një file si çelës, do t'ju kërkohet të jepni filepath-in e filet që paraqet çelësin.
 
-Nëse zgjodhët të jepni çelësin manualisht, do t'ju kërkohet të jepni tekstin qe do të paraqet çelësin.
+   * Jepni tekstin për të enkriptuar: Pas dhënies së çelësit, do t'ju kërkohet të jepni tekstin që dëshironi ta enkriptoni.
 
-Nëse zgjodhët të siguroni një file si çelës, do t'ju kërkohet të jepni filepath-in e filet që paraqet çelësin.
+   * Enkriptimi: Pastaj programi do të enkriptojë tekstin e dhënë duke përdorur çelësin e siguruar.
 
-Jepni tekstin për të enkriptuar: Pas dhënies së çelësit, do t'ju kërkohet të jepni tekstin që dëshironi ta enkriptoni.
+   * Jepni tekstin për të dekriptuar: Pas enkriptimit, do t'ju kërkohet të jepni tekstin që dëshironi të dekriptoni.
 
-Enkriptimi: Pastaj programi do të enkriptojë tekstin e dhënë duke përdorur çelësin e siguruar.
-
-Jepni tekstin për të dekriptuar: Pas enkriptimit, do t'ju kërkohet të jepni tekstin që dëshironi të dekriptoni.
-
-Dekriptimi: Programi do të dekriptojë tekstin e dhënë duke përdorur të njëjtin çelës të përdorur për enkriptim.
+   * Dekriptimi: Programi do të dekriptojë tekstin e dhënë duke përdorur të njëjtin çelës të përdorur për enkriptim.
 
 
 
